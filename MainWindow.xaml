@@ -1,0 +1,99 @@
+﻿<Window x:Class="bankfiókWPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:bankfiókWPF"
+        mc:Ignorable="d"
+        Title="Bank" Height="800" Width="1280" Background="LightSteelBlue" 
+        Closing="Window_Closing">
+    <ScrollViewer HorizontalScrollBarVisibility="Auto">
+        <Grid>
+            <DockPanel>
+                <Menu DockPanel.Dock="Top">
+                    <MenuItem Header="_Fájl" >
+                        <MenuItem Header="_Save" Click="MenuItem_Click_2"/>
+                        <MenuItem Header="_Open" Click="MenuItem_Click"/>
+                        <MenuItem Header="_CLose" Click="MenuItem_Click_1"/>
+                        <Separator/>
+                        <MenuItem Header="_Exit" Click="MenuItem_Click_3"/>
+                    </MenuItem>
+                    <MenuItem Header="_Edit">
+                        <MenuItem Command="Cut">
+                            <MenuItem.Icon>
+                                <Image Source="C:\Users\AndrásJózsef\Pictures\cut.png" />
+                            </MenuItem.Icon>
+                        </MenuItem>
+                        <MenuItem Command="Copy">
+                            <MenuItem.Icon>
+                                <Image Source="C:\Users\AndrásJózsef\Pictures\copy.png"/>
+                            </MenuItem.Icon>
+                        </MenuItem>
+                        <MenuItem Command="Paste">
+                            <MenuItem.Icon>
+                                <Image Source="C:\Users\AndrásJózsef\Pictures\paste.jpg"/>
+                            </MenuItem.Icon>
+                        </MenuItem>
+                    </MenuItem>
+                </Menu>
+            </DockPanel>
+            <TextBlock x:Name="CustomerAccountBlock" HorizontalAlignment="Left" Height="17" Margin="1,148,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="105"><Run Text="CustomerAccount"/><Run Text=" : "/></TextBlock>
+            <TextBlock x:Name="BabyAccountBlock" HorizontalAlignment="Left" Height="19" Margin="0,385,0,0" TextWrapping="Wrap" Text="BabyAccount : " VerticalAlignment="Top" Width="80"/>
+            <TextBlock HorizontalAlignment="Left" Height="20" Margin="1,128,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="283"><Run Text="Enter below if u wish to create a CustomerAccount "/><Run Text=":"/></TextBlock>
+            <TextBlock HorizontalAlignment="Left" Height="20" Margin="0,365,0,0" TextWrapping="Wrap" Text="Enter below if u wish to create a BabyAccount : " VerticalAlignment="Top" Width="254"/>
+            <TextBlock HorizontalAlignment="Left" Height="20" Margin="1,170,0,0" TextWrapping="Wrap" Text="Name : " VerticalAlignment="Top" Width="50"/>
+            <TextBlock HorizontalAlignment="Left" Height="20" Margin="1,190,0,0" TextWrapping="Wrap" Text="Address : " VerticalAlignment="Top" Width="50"/>
+            <TextBlock HorizontalAlignment="Left" Height="20" Margin="1,210,0,0" TextWrapping="Wrap" Text="State : " VerticalAlignment="Top" Width="39"/>
+            <TextBlock HorizontalAlignment="Left" Height="20" Margin="1,230,0,0" TextWrapping="Wrap" Text="Pin code : " VerticalAlignment="Top" Width="65"/>
+            <TextBlock HorizontalAlignment="Left" Height="20" Margin="1,250,0,0" TextWrapping="Wrap" Text="Balance : " VerticalAlignment="Top" Width="50"/>
+            <TextBlock HorizontalAlignment="Left" Height="20" Margin="0,404,0,0" TextWrapping="Wrap" Text="Name : " VerticalAlignment="Top" Width="39"/>
+            <TextBlock HorizontalAlignment="Left" Height="20" Margin="0,424,0,0" TextWrapping="Wrap" Text="Address : " VerticalAlignment="Top" Width="50"/>
+            <TextBlock HorizontalAlignment="Left" Height="20" Margin="0,444,0,0" TextWrapping="Wrap" Text="State : " VerticalAlignment="Top" Width="39"/>
+            <TextBlock HorizontalAlignment="Left" Height="20" Margin="0,464,0,0" TextWrapping="Wrap" Text="Pin code : " VerticalAlignment="Top" Width="65"/>
+            <TextBlock HorizontalAlignment="Left" Height="20" Margin="0,484,0,0" TextWrapping="Wrap" Text="Balance : " VerticalAlignment="Top" Width="50"/>
+            <TextBlock HorizontalAlignment="Left" Height="50" Margin="0,504,0,0" TextWrapping="Wrap" Text="Name of the owner's parent : " VerticalAlignment="Top" Width="65"/>
+
+            <TextBox Background="LightCyan" IsEnabled="{Binding ElementName=checkbox1, Path=IsChecked}" x:Name="CustomerAccountName" HorizontalAlignment="Left" Height="20" Margin="78,169,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="106"/>
+            <TextBox Background="LightCyan" IsEnabled="{Binding ElementName=checkbox1, Path=IsChecked}" x:Name="CustomerAccountAddress" HorizontalAlignment="Left" Height="20" Margin="78,189,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="106"/>
+            <TextBox Background="LightCyan" IsEnabled="{Binding ElementName=checkbox1, Path=IsChecked}" x:Name="CustomerAccountState" HorizontalAlignment="Left" Height="20" Margin="78,209,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="106"/>
+            <TextBox Background="LightCyan" IsEnabled="{Binding ElementName=checkbox1, Path=IsChecked}" x:Name="CustomerAccountPIN" HorizontalAlignment="Left" Height="20" Margin="78,229,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="106"/>
+            <TextBox Background="LightCyan" IsEnabled="{Binding ElementName=checkbox1, Path=IsChecked}" x:Name="CustomerAccountBalance" HorizontalAlignment="Left" Height="20" Margin="78,249,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="106"/>
+
+            <TextBox Background="LightCyan" IsEnabled="{Binding ElementName=checkbox2, Path=IsChecked}" x:Name="BabyAccountName" HorizontalAlignment="Left" Height="20" Margin="77,404,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="106"/>
+            <TextBox Background="LightCyan" IsEnabled="{Binding ElementName=checkbox2, Path=IsChecked}" x:Name="BabyAccountAddress" HorizontalAlignment="Left" Height="20" Margin="77,424,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="106"/>
+            <TextBox Background="LightCyan" IsEnabled="{Binding ElementName=checkbox2, Path=IsChecked}" x:Name="BabyAccountState" HorizontalAlignment="Left" Height="20" Margin="77,443,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="106"/>
+            <TextBox Background="LightCyan" IsEnabled="{Binding ElementName=checkbox2, Path=IsChecked}" x:Name="BabyAccountPIN" HorizontalAlignment="Left" Height="20" Margin="77,463,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="106"/>
+            <TextBox Background="LightCyan" IsEnabled="{Binding ElementName=checkbox2, Path=IsChecked}" x:Name="BabyAccountBalance" HorizontalAlignment="Left" Height="20" Margin="77,483,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="106"/>
+            <TextBox Background="LightCyan" IsEnabled="{Binding ElementName=checkbox2, Path=IsChecked}" x:Name="BabyAccountParentName" HorizontalAlignment="Left" Height="20" Margin="78,534,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="106"/>
+
+            <CheckBox x:Name="Checkbox1" Content="Enable" HorizontalAlignment="Left" Height="16" Margin="104,149,0,0" VerticalAlignment="Top" Width="80" Checked="Checkbox1_Checked"/>
+            <CheckBox x:Name="Checkbox2" Content="Enable" HorizontalAlignment="Left" Height="16" Margin="78,385,0,0" VerticalAlignment="Top" Width="80" Checked="Checkbox2_Checked"/>
+
+            <Button x:Name="CreateButton1" Content="Create" IsEnabled="{Binding ElementName=Checkbox1, Path=IsChecked}" HorizontalAlignment="Left" Margin="77,294,0,0" VerticalAlignment="Top" Width="75" Click="CreateButton1_Click"/>
+            <Button x:Name="CreateButton2" Content="Create" IsEnabled="{Binding ElementName=Checkbox2, Path=IsChecked}" HorizontalAlignment="Left" Margin="77,584,0,0" VerticalAlignment="Top" Width="75" Click="CreateButton2_Click"/>
+
+            <TextBlock x:Name="LoadTextBlock" HorizontalAlignment="Left" IsEnabled="{Binding IsPressed, ElementName=LoadButton}"  Height="Auto" Margin="1003,145,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="226"/>
+            <Button Content="Save" x:Name="SaveButton" HorizontalAlignment="Left" Margin="31,42,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click"/>
+            <Button Content="Load" x:Name="LoadButton" HorizontalAlignment="Left" Margin="1003,42,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click_1"/>
+            <TextBlock HorizontalAlignment="Left" Height="17" Margin="1003,128,0,0" TextWrapping="Wrap" Text="Datas available in the file:" VerticalAlignment="Top" Width="226"/>
+
+            <TextBlock  TextWrapping="Wrap" Text="Please enter the name and PIN-code of the account you would like to look up:" VerticalAlignment="Top" HorizontalAlignment="Center" Margin="403,173,531,0" Width="339" Height="37"/>
+            <TextBox x:Name="searchNameBox"  HorizontalAlignment="Center" VerticalAlignment="Top" Margin="403,215,531,0" Height="20" Width="339"/>
+            <TextBox VerticalAlignment="Top"  HorizontalAlignment="Center" x:Name="searchPINBox"  Margin="403,236,531,0" Height="20" Width="339"/>
+            <Button x:Name="SearchButton" Content="Search" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="403,261,799,0" Height="20" Width="71" Click="SearchButton_Click"  />
+            <TextBlock  x:Name="accountNumberTextBlock" IsEnabled="{Binding IsPressed, ElementName=SearchButton}" HorizontalAlignment="Center" VerticalAlignment="Top" Width="100" Height="20" Margin="642,261,531,0"/>
+
+            <TextBlock TextWrapping="Wrap" Text="Withdraw money:" VerticalAlignment="Top" HorizontalAlignment="Center" Margin="403,324,776,0" />
+            <TextBox x:Name="withdrawBox" VerticalAlignment="Top" HorizontalAlignment="Center" Margin="403,363,777,0" Height="22" Width="93" />
+            <Button x:Name="withdrawButton" VerticalAlignment="Top" HorizontalAlignment="Center" Content="Withdraw" Margin="420,406,798,0" Click="withdrawButton_Click"/>
+
+            <TextBlock TextWrapping="Wrap" Text="Add money:" TextAlignment="Center" VerticalAlignment="Top" HorizontalAlignment="Center" Margin="538,324,643,0" Width="92" />
+            <TextBox x:Name="addBox" VerticalAlignment="Top" HorizontalAlignment="Center" Margin="538,363,643,0" Height="22" Width="92"/>
+            <Button x:Name="addButton" VerticalAlignment="Top" HorizontalAlignment="Center" Content="Add" Margin="565,406,670,0" Width="38"/>
+
+            <TextBlock TextWrapping="Wrap" Text="Change state:" VerticalAlignment="Top" HorizontalAlignment="Center" Margin="670,324,531,0" />
+            <TextBox x:Name="stateBox" VerticalAlignment="Top" HorizontalAlignment="Center" Margin="670,363,531,0" Height="22" Width="72"/>
+            <Button x:Name="stateButton" VerticalAlignment="Top" HorizontalAlignment="Center" Content="Change" Margin="684,406,545,0"/>
+        </Grid>
+    </ScrollViewer>
+</Window>

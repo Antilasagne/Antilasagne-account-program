@@ -1,0 +1,34 @@
+C:\Users\AndrásJózsef\source\repos\bankfiókWPF\bin\Debug\bankfiókWPF.exe.config
+C:\Users\AndrásJózsef\source\repos\bankfiókWPF\bin\Debug\bankfiókWPF.exe
+C:\Users\AndrásJózsef\source\repos\bankfiókWPF\bin\Debug\bankfiókWPF.pdb
+C:\Users\AndrásJózsef\source\repos\bankfiókWPF\bin\Debug\bankfiókkönyvtár.dll
+C:\Users\AndrásJózsef\source\repos\bankfiókWPF\bin\Debug\bankfiókkönyvtár.pdb
+C:\Users\AndrásJózsef\source\repos\bankfiókWPF\obj\Debug\bankfiókWPF.csprojAssemblyReference.cache
+C:\Users\AndrásJózsef\source\repos\bankfiókWPF\obj\Debug\MainWindow.g.cs
+C:\Users\AndrásJózsef\source\repos\bankfiókWPF\obj\Debug\App.g.cs
+C:\Users\AndrásJózsef\source\repos\bankfiókWPF\obj\Debug\bankfiókWPF_MarkupCompile.cache
+C:\Users\AndrásJózsef\source\repos\bankfiókWPF\obj\Debug\bankfiókWPF_MarkupCompile.lref
+C:\Users\AndrásJózsef\source\repos\bankfiókWPF\obj\Debug\MainWindow.baml
+C:\Users\AndrásJózsef\source\repos\bankfiókWPF\obj\Debug\bankfiókWPF.g.resources
+C:\Users\AndrásJózsef\source\repos\bankfiókWPF\obj\Debug\bankfiókWPF.Properties.Resources.resources
+C:\Users\AndrásJózsef\source\repos\bankfiókWPF\obj\Debug\bankfiókWPF.csproj.GenerateResource.cache
+C:\Users\AndrásJózsef\source\repos\bankfiókWPF\obj\Debug\bankfiókWPF.csproj.CopyComplete
+C:\Users\AndrásJózsef\source\repos\bankfiókWPF\obj\Debug\bankfiókWPF.exe
+C:\Users\AndrásJózsef\source\repos\bankfiókWPF\obj\Debug\bankfiókWPF.pdb
+C:\Users\AndrásJózsef\Desktop\visual studio\bankfiókWPF\obj\Debug\MainWindow.g.cs
+C:\Users\AndrásJózsef\Desktop\visual studio\bankfiókWPF\obj\Debug\App.g.cs
+C:\Users\AndrásJózsef\Desktop\visual studio\bankfiókWPF\obj\Debug\bankfiókWPF_MarkupCompile.cache
+C:\Users\AndrásJózsef\Desktop\visual studio\bankfiókWPF\obj\Debug\bankfiókWPF_MarkupCompile.lref
+C:\Users\AndrásJózsef\Desktop\visual studio\bankfiókWPF\bin\Debug\bankfiókWPF.exe.config
+C:\Users\AndrásJózsef\Desktop\visual studio\bankfiókWPF\bin\Debug\bankfiókWPF.exe
+C:\Users\AndrásJózsef\Desktop\visual studio\bankfiókWPF\bin\Debug\bankfiókWPF.pdb
+C:\Users\AndrásJózsef\Desktop\visual studio\bankfiókWPF\bin\Debug\bankfiókkönyvtár.dll
+C:\Users\AndrásJózsef\Desktop\visual studio\bankfiókWPF\bin\Debug\bankfiókkönyvtár.pdb
+C:\Users\AndrásJózsef\Desktop\visual studio\bankfiókWPF\obj\Debug\bankfiókWPF.csprojAssemblyReference.cache
+C:\Users\AndrásJózsef\Desktop\visual studio\bankfiókWPF\obj\Debug\MainWindow.baml
+C:\Users\AndrásJózsef\Desktop\visual studio\bankfiókWPF\obj\Debug\bankfiókWPF.g.resources
+C:\Users\AndrásJózsef\Desktop\visual studio\bankfiókWPF\obj\Debug\bankfiókWPF.Properties.Resources.resources
+C:\Users\AndrásJózsef\Desktop\visual studio\bankfiókWPF\obj\Debug\bankfiókWPF.csproj.GenerateResource.cache
+C:\Users\AndrásJózsef\Desktop\visual studio\bankfiókWPF\obj\Debug\bankfiókWPF.csproj.CopyComplete
+C:\Users\AndrásJózsef\Desktop\visual studio\bankfiókWPF\obj\Debug\bankfiókWPF.exe
+C:\Users\AndrásJózsef\Desktop\visual studio\bankfiókWPF\obj\Debug\bankfiókWPF.pdb
