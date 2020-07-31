@@ -15,7 +15,6 @@ namespace bankfiókWPF
     }
     public partial class MainWindow : Window
     {
-        Account LoadFile = new Account();//not needed anymore
         Account SaveFile = new Account();
         Account Bridge = new Account();
         Data data = new Data();
@@ -153,7 +152,7 @@ namespace bankfiókWPF
         private void withdrawButton_Click(object sender, RoutedEventArgs e)
         {
             decimal.TryParse(withdrawBox.Text, out decimal result);
-            try { Account.account[data.accountNumber].WithDrawFunds(result); } catch { MessageBox.Show("Nem sikerült."); }
+            try { Account.account[data.accountNumber].WithDrawFunds(result);data.accountNumber = 0; } catch { MessageBox.Show("Nem sikerült. 1"); }
             if (withdrawBox.Text == "")
             {
                 MessageBox.Show("Semmi nem volt beírva. Kérem adja meg az összeget számokban!");
@@ -162,12 +161,32 @@ namespace bankfiókWPF
 
         private void SearchButton_Click(object sender, RoutedEventArgs e)
         {
-            if (searchNameBox.Text == "" || searchPINBox.Text == "") { MessageBox.Show("A dobozok üresek."); }//eddig jó
-            int.TryParse(searchPINBox.Text, out int searchpin);//innen bugged/nem tesztelt
+            if (searchNameBox.Text == "" || searchPINBox.Text == "") { MessageBox.Show("A doboz/ok üres/ek."); }
+            int.TryParse(searchPINBox.Text, out int searchpin);
             string searchname = searchNameBox.Text;
             int result = Bridge.SearchAccount(searchname, searchpin);
             data.accountNumber += result;
             accountNumberTextBlock.Text = result.ToString();
+        }
+
+        private void addButton_Click(object sender, RoutedEventArgs e)
+        {
+            decimal.TryParse(addBox.Text, out decimal result);
+            try { Account.account[data.accountNumber].AddFunds(result); data.accountNumber = 0; } catch { MessageBox.Show("Nem sikerült. 2"); }
+            if (addBox.Text == "")
+            {
+                MessageBox.Show("Semmi nem volt beírva. Kérem adja meg az összeget számokban!");
+            }
+        }
+
+        private void stateButton_Click(object sender, RoutedEventArgs e)
+        {
+            string result = stateBox.Text;
+            try { Account.account[data.accountNumber].ChangeState(result); data.accountNumber = 0; } catch { MessageBox.Show("Nem sikerült. 3"); }
+            if (stateBox.Text == "")
+            {
+                MessageBox.Show("Semmi nem volt beírva. Kérem írjon be valamit!");
+            }
         }
     }
 }

@@ -89,11 +89,11 @@
 
             <TextBlock TextWrapping="Wrap" Text="Add money:" TextAlignment="Center" VerticalAlignment="Top" HorizontalAlignment="Center" Margin="538,324,643,0" Width="92" />
             <TextBox x:Name="addBox" VerticalAlignment="Top" HorizontalAlignment="Center" Margin="538,363,643,0" Height="22" Width="92"/>
-            <Button x:Name="addButton" VerticalAlignment="Top" HorizontalAlignment="Center" Content="Add" Margin="565,406,670,0" Width="38"/>
+            <Button x:Name="addButton" VerticalAlignment="Top" HorizontalAlignment="Center" Content="Add" Margin="565,406,670,0" Width="38" Click="addButton_Click"/>
 
             <TextBlock TextWrapping="Wrap" Text="Change state:" VerticalAlignment="Top" HorizontalAlignment="Center" Margin="670,324,531,0" />
             <TextBox x:Name="stateBox" VerticalAlignment="Top" HorizontalAlignment="Center" Margin="670,363,531,0" Height="22" Width="72"/>
-            <Button x:Name="stateButton" VerticalAlignment="Top" HorizontalAlignment="Center" Content="Change" Margin="684,406,545,0"/>
+            <Button x:Name="stateButton" VerticalAlignment="Top" HorizontalAlignment="Center" Content="Change" Margin="684,406,545,0" Click="stateButton_Click"/>
         </Grid>
     </ScrollViewer>
 </Window>
